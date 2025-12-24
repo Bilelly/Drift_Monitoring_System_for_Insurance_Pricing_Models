@@ -1,4 +1,4 @@
-# 🚗 Drift Monitoring System for Insurance Pricing Models
+# 🚗 Pricing Model Validation & Monitoring
 
 > **By Bilel SAYOUD – Data Scientist & Actuarial Engineer**  
 > *An end-to-end ML pipeline for insurance pricing with robust drift detection capabilities*
@@ -134,6 +134,7 @@ A binary XGBoost classifier was trained to distinguish between training and prod
   "AUC-ROC": 0.9980
 }
 ````
+
 
 
 
