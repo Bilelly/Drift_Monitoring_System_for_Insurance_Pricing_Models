@@ -63,14 +63,7 @@ A robust 4-step process transforms raw insurance data into a production-ready pr
 2. **Data Preprocessing** (`02_data_preprocessing.ipynb`)
    - Outlier removal using domain-specific thresholds (`src/RemoveOutliers.py`)
    - Feature engineering for temporal and categorical variables
-   - Implementation of a Scikit-learn pipeline with `ColumnTransformer` to prevent data leakage:
-     ```python
-     preprocessor = ColumnTransformer(
-         transformers=[
-             ('num', StandardScaler(), numerical_features),
-             ('cat', OneHotEncoder(handle_unknown='ignore', drop='first'), categorical_features)
-         ])
-     ```
+   
 
 3. **Model Benchmarking** (`03_data_modeling.ipynb`)
    - Comparative evaluation of four regression algorithms:
@@ -134,6 +127,7 @@ A binary XGBoost classifier was trained to distinguish between training and prod
   "AUC-ROC": 0.9980
 }
 ````
+
 
 
 
